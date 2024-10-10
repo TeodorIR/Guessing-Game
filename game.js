@@ -31,5 +31,13 @@ function playGame() {
 
   do {
     guess = prompt("Guess the number between 1 and 100");
+    if (guess < answer) {
+      alert("Too low!");
+    } else if (guess > answer) {
+      alert("Too high!");
+    } else {
+      alert("Congratulations! You guessed the correct number.");
+      break;
+    }
   } while (guess != answer);
 }

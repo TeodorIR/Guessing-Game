@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100%;
+  background-color: blueviolet;
+}
+
+button {
+  width: 250px;
+  height: 70px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  font-size: large;
+  font-weight: bold;
+}
