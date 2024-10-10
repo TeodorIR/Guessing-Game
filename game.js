@@ -16,7 +16,7 @@ function playGame() {
   let answer, guess;
   let message;
   answer = Math.floor(Math.random() * 100) + 1;
-  message = "Guess the number between 1 and 10";
+  message = "Guess the number between 1 and 100";
 
   do {
     guess = prompt(message);
