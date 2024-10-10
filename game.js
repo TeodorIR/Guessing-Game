@@ -14,17 +14,27 @@ function init() {
 }
 function playGame() {
   let answer, guess;
-  answer = 57;
+  let message;
+  answer = Math.floor(Math.random() * 10) + 1;
+  message = "Guess the number between 1 and 10";
 
   do {
-    guess = prompt("Guess the number between 1 and 100");
+    guess = prompt(message);
+    if (guess === null) return;
+
+    if (isNaN(guess)) {
+      alert("Please enter a number!");
+      continue; // skip the rest of the loop and prompt again
+    }
+
+    guess = Number(guess); // Convert the guess to a number
+
     if (guess < answer) {
-      alert("Too low!");
+      message = "Too Low!";
     } else if (guess > answer) {
-      alert("Too high!");
+      message = "Too High!";
     } else {
       alert("Congratulations! You guessed the correct number.");
-      break;
     }
   } while (guess != answer);
 }
