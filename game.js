@@ -15,7 +15,7 @@ function init() {
 function playGame() {
   let answer, guess;
   let message;
-  answer = Math.floor(Math.random() * 10) + 1;
+  answer = Math.floor(Math.random() * 100) + 1;
   message = "Guess the number between 1 and 10";
 
   do {
@@ -37,7 +37,9 @@ function playGame() {
     } else if (guess > answer) {
       message = "Too High!";
     } else {
-      alert("Congratulations! You guessed the correct number.");
+      alert(
+        "Felicitari! Ai castigat o sunca cu cascaval afumat.(Premiile se dau in limita stocului disponibil)"
+      );
     }
   } while (guess != answer);
   return "Game Over";
