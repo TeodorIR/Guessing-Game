@@ -12,19 +12,6 @@ function init() {
   let button = document.querySelector("button#startgame");
   button.onclick = playGame;
 }
-
-/* function playGame() {
-Set up the data
-
-Initialise
-
-Repeat
-   User guesses
-   Check and report
-
-...until correct
-} */
-
 function playGame() {
   let answer, guess;
   answer = 57;
@@ -41,3 +28,15 @@ function playGame() {
     }
   } while (guess != answer);
 }
+
+/* function playGame() {
+Set up the data
+
+Initialise
+
+Repeat
+   User guesses
+   Check and report
+
+...until correct
+} */
