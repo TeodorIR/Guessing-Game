@@ -20,7 +20,10 @@ function playGame() {
 
   do {
     guess = prompt(message);
-    if (guess === null) return;
+    if (guess === null) {
+      alert("Game Over");
+      return "Game Over"; // exit the function and end the game
+    }
 
     if (isNaN(guess)) {
       alert("Please enter a number!");
@@ -37,6 +40,7 @@ function playGame() {
       alert("Congratulations! You guessed the correct number.");
     }
   } while (guess != answer);
+  return "Game Over";
 }
 
 /* function playGame() {
